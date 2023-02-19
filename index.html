@@ -45,7 +45,7 @@
 						</ul>
 						<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
+							<li id="playMusicBtn" onclick="audio.play();"><a href="#" class="button fit">Play Music</a></li>
 						</ul>
 					</nav>
 
@@ -55,6 +55,7 @@
 							<header class="major">
 								<h1>Ring Of Fire 2023</h1>
 							</header>
+							
 							<div class="content">
 								<p>Our Family vacation begins here and our love never ends.</p>
 								<ul class="actions">
@@ -63,6 +64,33 @@
 							</div>
 						</div>
 					</section>
+
+					<section>
+						<div class="player-container">
+							<!-- song -->
+							<div class="img-container">
+								<img id="img" class="img-player" src="" alt="Album Art">
+							</div>
+							<h2 id="title">Electric Chill Machine</h2>
+							<h3 id="artist">Jacinto</h3>
+							<audio src="music/jc-rof-guitar.mp3"></audio>
+							<!-- progress -->
+							<div class="progress-container" id="progress-container">
+								<div class="progress" id="progress"></div>
+								<div class="duration-wrapper">
+									<span id="current-time">0:00</span>
+									<span id="duration">2:32</span>
+								</div>
+							</div>
+							<!-- Controls -->
+							<div class="player-controls">
+								<div class="fas fa-backward" id="prev" title="Previous"></div>
+								<div class="fas fa-play main-button" id="play" title="Play"></div>
+								<div class="fas fa-forward" id="next" title="Next"></div>
+							</div>
+						</div>
+					</section>
+
 
 				<!-- Main -->
 					<div id="main">
@@ -252,6 +280,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/countdown.js"></script>
+			<script src="assets/js/playMusic.js"></script>
 
 	</body>
 </html>
